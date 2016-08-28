@@ -4,7 +4,7 @@ var unlinker = (function() {
         console.debug("Looking for links...");
         var links = document.querySelectorAll("a");
         links.forEach(function(link) {
-            if (/(^|\.)forbes.com$/.test(link.hostname)) {
+            if (/(^|\.)forbes\.com$/.test(link.hostname)) {
                 console.debug("Found one...");
                 begone(link);
             }
