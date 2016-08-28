@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "UnLink",
+  "description": "Remove links to websites in domains you have no interest in.",
+  "version": "0.0.5",
+  "author": "David Roberts (@davidroberts63)",
+  "homepage_url": "http://unlink.teapotcoder.com",
+  "content_scripts": [
+  {
+    "matches": ["https://*/*","http://*/*"],
+    "js": [
+      "main.js"
+    ],
+    "run_at": "document_end"
+  }],
+  "permissions": ["tabs"],
+
+  "icons": {
+    /*
+    "48": "bluefinlogo48.png",
+    "64": "bluefinlogo64.png",
+    "128": "bluefinlogo128.png"
+    */
+  },
+
+  "content_security_policy": "script-src 'self' https://cdn.mxpnl.com; object-src 'self'"
+}
