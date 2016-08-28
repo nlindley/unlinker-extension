@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
 
-  "name": "UnLink",
+  "name": "Nooooope",
   "description": "Remove links to websites in domains you have no interest in.",
   "version": "0.0.5",
   "author": "David Roberts (@davidroberts63)",
-  "homepage_url": "http://unlink.teapotcoder.com",
+  "homepage_url": "http://nooooope.teapotcoder.com",
   "content_scripts": [
   {
     "matches": ["https://*/*","http://*/*"],
