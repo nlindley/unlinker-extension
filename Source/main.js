@@ -6,7 +6,7 @@ var unlinker = (function() {
         links.forEach(function(link) {
             if (link.href.startsWith("http://www.forbes.com")) {
                 console.debug("Found one...");
-                redactIt(link);
+                begone(link);
             }
         });
         console.groupEnd();
@@ -22,6 +22,10 @@ var unlinker = (function() {
         var span = document.createElement("SPAN");
         span.innerHTML = "~redacted~";
         link.parentElement.replaceChild(span, link);
+    }
+
+    function begone(link) {
+        link.parentElement.removeChild(link);
     }
 
     return { start: start };
